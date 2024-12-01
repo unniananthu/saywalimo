@@ -1,0 +1,54 @@
+.why-us {
+    padding: 0;
+}
+
+.section-bg {
+    background-color: #f6f9fd;
+}
+
+.why-us .accordion-list {
+    padding: 0 100px 60px 100px;
+}
+
+.why-us .content {
+    padding: 60px 100px 0 100px;
+}
+
+.section-title {
+    padding-bottom: 40px;
+}
+
+.why-us .accordion-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+.why-us .accordion-list li {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.why-us .accordion-list a.collapsed {
+    color: #000;
+}
+
+.why-us .accordion-list span {
+    color: #e5bb73;
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.why-us .accordion-list a {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-right: 30px;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+}

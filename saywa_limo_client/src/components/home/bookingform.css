@@ -1,0 +1,201 @@
+.bookingSelectorParent {
+  position: relative;
+}
+
+.ant-picker {
+  background: #1e1e1e;
+  border: none;
+  color: white;
+}
+
+.bookingSelectorParent::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 10px;
+  height: 10px;
+}
+
+.reserveButtonHome {
+  background: #c29c66;
+  padding: 10px 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.pickupContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.pkp-container {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+  color: #f0f2f7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.emptyInput {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: white;
+  border: inherit;
+  border-radius: 5px;
+  color: black;
+}
+.emptyInputOne {
+  width: 100%;
+  padding: 5px 10px;
+  border: inherit;
+  border-radius: 5px;
+  background-color: #1e1e1e !important;
+  color: white;
+}
+.emptyInputDate {
+  border: none;
+  background-color: inherit;
+  color: white !important;
+}
+
+.emptyInputOne::placeholder {
+  color: darkgrey;
+  /* Set the desired color */
+}
+
+.emptyInputOne:focus {
+  outline: none;
+}
+.custom-time-picker {
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.custom-time-picker:focus {
+  border: none;
+  outline: none;
+}
+
+/* Style the dropdown (options) */
+select option {
+  background-color: #1e1e1e; /* Background color of each option */
+  color: #fff; /* Text color of each option */
+  padding: 5px 10px; /* Spacing inside each option */
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+/* Style the dropdown arrow (optional) */
+select::-ms-expand {
+  display: none; /* Hide the default arrow in IE */
+}
+
+select::after {
+  content: "\25BC"; /* Unicode character for a down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* Add any other styles you want for the arrow */
+}
+.css-1u23akw-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  color: #fff !important ;
+  background-color: #000 !important;
+  font-weight: 500;
+}
+/* .css-1u23akw-MuiButtonBase-root-MuiPickersDay-root.Mui-focused { */
+.css-1uu6ptx-MuiInputBase-root-MuiOutlinedInput-root {
+  outline: none !important;
+}
+.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root {
+  color: white;
+}
+:where(.css-dev-only-do-not-override-pr0fja).ant-picker .ant-picker-suffix {
+  color: white !important;
+}
+:where(.css-dev-only-do-not-override-pr0fja).ant-picker:hover,
+:where(.css-dev-only-do-not-override-pr0fja).ant-picker-focused {
+  border-color: red !important;
+}
+:where(.css-dev-only-do-not-override-pr0fja).ant-picker {
+  color: #ffffff !important;
+  /* position: relative; */
+  display: inline-flex;
+  align-items: center;
+  background: #1e1e1e !important;
+  border: none !important;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: none !important;
+}
+:where(.css-dev-only-do-not-override-pr0fja).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-selected
+  .ant-picker-cell-inner,
+:where(.css-dev-only-do-not-override-pr0fja).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-start
+  .ant-picker-cell-inner,
+:where(.css-dev-only-do-not-override-pr0fja).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-end
+  .ant-picker-cell-inner {
+  color: #fff;
+  background: #000000;
+  border-radius: 30px;
+}
+:where(.css-dev-only-do-not-override-pr0fja).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-today
+  .ant-picker-cell-inner::before {
+  border: 1px solid #000 !important;
+  border-radius: 14px !important;
+}
+:where(.css-dev-only-do-not-override-pr0fja).ant-picker
+  .ant-picker-input
+  > input {
+  color: white !important;
+}
+@media only screen and (max-width: 900px) {
+  .pickupContainer {
+    flex-direction: column;
+  }
+}
+
+.roundTripContainer {
+  transition: 0.5s;
+  overflow-y: none;
+  overflow-x: auto;
+  /* width: 400px; */
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

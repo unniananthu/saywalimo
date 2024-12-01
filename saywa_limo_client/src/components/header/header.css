@@ -1,0 +1,66 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.banner-image {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+}
+
+.banner-image-container {
+  position: relative;
+}
+
+.banner-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.home-booking-form {
+  z-index: 99;
+  position: absolute;
+  right: 20px;
+  top: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+
+.banner-image-containerx {
+  position: relative;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-menu {
+    display: none;
+  }
+
+  .home-booking-form {
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    width: 95%;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

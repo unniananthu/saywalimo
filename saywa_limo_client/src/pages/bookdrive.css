@@ -1,0 +1,20 @@
+.bbookdrive {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.profileTabsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 700px) {
+  .profileTabsContainer {
+    flex-direction: column;
+  }
+  .bbookdrive {
+    flex-direction: column;
+  }
+}

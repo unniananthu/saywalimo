@@ -1,0 +1,50 @@
+.review-booking-card {
+  background-color: white;
+  color: black;
+  /* margin: 20px 0; */
+}
+
+.psngr-dtls-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: space-between; */
+}
+
+.mobImgx {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+}
+
+.review-vehicle-container {
+  display: flex;
+}
+
+.pkp-containerz {
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 5px;
+  /* border: 1px solid #b5b5b575; */
+  color: black;
+  display: flex;
+  gap: 5px;
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+  .mobImgx {
+    width: 100%;
+  }
+
+  .review-booking-card {
+    margin: 0;
+  }
+
+  .psngr-dtls-container {
+    grid-template-columns: auto;
+  }
+}
+.p-13 {
+  padding: 13px;
+}

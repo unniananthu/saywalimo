@@ -1,0 +1,50 @@
+.counts {
+    padding-top: 0;
+}
+
+.counts .count-box {
+    box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    border: 1px solid #e5bb73;
+    border-radius: 10px;
+}
+
+.counts .count-box span,
+.counter_postfixspan {
+    font-size: 42px;
+    line-height: 24px;
+    display: inline;
+    font-weight: 700;
+    color: #000;
+    /* margin-left: 50px; */
+}
+
+.counts .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+}
+
+.section-title h3,
+.section-title h3.sub-title {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.counts .count-box div {
+    display: block;
+    font-size: 30px;
+    color: #e5bb73;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}

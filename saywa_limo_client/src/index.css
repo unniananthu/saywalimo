@@ -1,0 +1,32 @@
+* {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 60px 0;
+}
+
+:where(.css-pr0fja).ant-picker .ant-picker-input > input {
+  color: rgb(255 255 255 / 88%) !important;
+}

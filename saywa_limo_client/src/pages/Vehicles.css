@@ -1,0 +1,77 @@
+.mobImg {
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.signContainer {
+  width: 400px;
+  height: 300px;
+}
+
+.veh-dtls-container {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.veh-dtls-container:hover {
+  transform: scale(1.015);
+  transition: 1s;
+}
+
+.monbhiddss {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+}
+
+.select-vehicle-image {
+  border-radius: 5px;
+  height: 125px;
+}
+.vhllistviewimagecontainer {
+  width: 200px;
+}
+
+.vehStopContainer {
+  display: flex;
+  gap: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .vehStopContainer {
+    flex-direction: column;
+  }
+  .veh-dtls-container {
+    flex-direction: column;
+  }
+
+  .select-vehicle-image {
+    width: 100%;
+  }
+
+  .signContainer {
+    width: 400px;
+    height: 300px;
+  }
+
+  .monbhiddss {
+    width: 100%;
+  }
+
+  .moverflow {
+    overflow-y: auto;
+  }
+
+  .mobColRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobImg {
+    width: 100% !important;
+    object-fit: contain;
+  }
+}
