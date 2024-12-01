@@ -1,0 +1,3 @@
+.directions-renderer {
+  z-index: 1; /* Adjust the value as needed */
+}

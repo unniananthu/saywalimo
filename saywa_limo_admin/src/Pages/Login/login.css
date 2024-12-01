@@ -1,0 +1,40 @@
+.llxggsdf {
+  background-image: url("https://lh3.googleusercontent.com/fife/AKsag4OAwJ0xVEIAW-VaWpCLH-zAzuXsZ1JOEREliKeAZEhXQFMbQjs0vi3GTCFlvS_LrUCvduCu4JhGw0SnZ0PEIWGHNk57kzFAtsy4y_fSYYWhQSfpo74hZ3Lf-q_wK94bk9i0v3kXwzJ_otK0plGh3J3XG9TQYl8AArq2G8BZ22SUd7Y_aKml-nvQvtBGVNWUiIKyuwCJcJ80UNjMXUh5spverqdVYNEi8V4t5qEr7DfioajptrUCZrJy2Ba-YXtLbmk4T92W0ttO7_tqF_52YEiGIoan12Q2wIiodKK7Wi5is7GfI1jp3uqMmZhNT85qPi0jiFC9f0LcK60PjmLERlU63noZpFDb5Br7askyriWCSXKDNqS0SBtsvO13uw8bAIZaOL6l9IHE-pwIl7HXDaFpmse_FM7Ek3-UcS993-k5wxeeSr0TcJsIRDi7o0P206rTDwJ26lWLajkSneK8KwH0xwen0f3dsV3_OLikyA32M_pTZSM6T3-g_jNdW_GoJOHMxhxhnTYBhxnw3cKOV9BzXxGYLiZRTxQtsosIP0Fp7Z99lafgOZ7EOkIdgRNNHMMNrPm30EbzKUyzO8CSKv1ODNu9nzObBu0HKvvvHA3_U8_OCCkHdeAQeThRQh95Har9quPpqJrO-2dNkbKcuff3goCG91eMosRYxevvaEZ5rri3LNEAhJhEXBg1LTzEsbaq3hZi7VxpZzbwoypDbEMMTzZ4WWjhxfv3beL0ZRIVCM5j0wC_vxF5gGY3RCNUT9p03SOZuu3AylImWTsVzq_zX6zOQhGtjGf8eXV73GBA9JLp6iYToScHhSZ6TtWYvaqb8UtkLj8L2RvOA2yadRw-WFBBnx8ledhx2BiVJqo8gfSqukgXrd9Vr3RPYDD1iqD082pIbVWuTsH8AENyJoIssIkgDdVvYw2Gaz5nASx0cI-M3Fzd_sI5KuTu562C7dMygXeBOLqTBQS5774rvGL1q505qeAkAQDlxMJaVVFmmDkoSQBEYaQZNhzhwZCtckmq_qXM_dW3ZgUZHAAHzIRXlBIx-ErYMN0OX7ppsWejpOPdJTk5vtIVSix6dav44FUCjt26ls1fZoUQJ0LTQTT_WBer89TyvmnRhgQBsPwE15jaA03tx4POaDGQ8d9vitNE_LSFs2OAwQXWkwWisxnSY9_JOafUN4ZBnIhJJUIxQ66CVgD-hxMo2NSyfeaVZway_RPtm0jQTI2F5Sy9zdgNrBkETS1sYz9FcWbKOcnubZRfz4-FOW6ZDy2e9p-g20WJYwpH2NMvNV74LUXiATvn0-VXbjBfsBeLbljmXEuepAUx4IVtw-n3uclwqYt0Q_QufiCTQUH0IZR7AxXpFV4LKS_UFfY4KO7zo-n_LTZvcQyzJY1BZIHIhKOxM6TOL0imFrgtj1k7-S5AoQgChG135zbgKKx_llKEMdtF33204JFOSKPDaOS7cpWdVjWIHx9u3KZwzxXDfhbGiMs_9sP6u4GdfY_z4Ix250dsa-rV72ZnEl6wBO6Qt7O1ZG_1jZ8781NFLy37I8n02XORoj0eDcsGSFmZC54IW3CxwDJ_G7n7WmGWDik3CBJp91QLskSnmJah3oL6U_JBHvcIyfWMYtNL3vmvEtT_ut231W40XXjajkpJzc_QL6NEOprJ=w1920-h973");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.llxggsdf::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.253);
+  width: 100vw;
+  height: 100vh;
+}
+.llxxdcc {
+  z-index: 9999;
+  background-color: blur;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px !important;
+  background-color: rgb(255 255 255 / 66%);
+}
+
+.reserveButtonHome {
+  background: #c29c66 !important;
+  padding: 10px 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .llxxdcc {
+    width: 80%;
+  }
+}

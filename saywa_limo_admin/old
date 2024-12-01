@@ -1,0 +1,121 @@
+import { Button, Input, Modal, Table } from "antd";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  getAllVehicles,
+  updateBaseDistancePriceSliceItem,
+  updateBaseDistanceSliceItem,
+} from "../../store/Vehicles/VehicleSlice";
+
+function SettingsPage() {
+  const [openModal, setOpenModal] = useState(false);
+  const [modalType, setModalType] = useState("kms");
+  const [saveLoading, setSaveLoading] = useState(false);
+  const [miles, setMiles] = useState(0);
+  const [price, setPrice] = useState(0);
+
+  const dispatch = useDispatch();
+  const { allVehicleList, isLoading } = useSelector((state) => state?.vehicle);
+
+  const columns = [
+    { title: "Vehicle Name", dataIndex: "vehicleName" },
+    {
+      title: "Base Distance",
+      render: (value) => (
+        <div className="text-end">{value.baseDistance} Mile(s)</div>
+      ),
+    },
+    {
+      title: "Price Post Base Distance",
+      render: (value) => (
+        <div className="text-end">$ {value.pricePerUnitDistance}</div>
+      ),
+    },
+    {
+      title: "",
+      render: (value) => <Button>Update</Button>,
+    },
+  ];
+
+  useEffect(() => {
+    dispatch(getAllVehicles());
+  }, []);
+
+  const saveDistance = () => {
+    setSaveLoading(true);
+    const data = {
+      miles,
+    };
+    dispatch(updateBaseDistanceSliceItem(data)).then((res) => {
+      setSaveLoading(false);
+      setOpenModal(false);
+    });
+  };
+
+  const savePrice = () => {
+    setSaveLoading(true);
+    const data = {};
+    dispatch(updateBaseDistancePriceSliceItem(data)).then((res) => {
+      setSaveLoading(false);
+      setOpenModal(false);
+    });
+  };
+
+  return (
+    <div>
+      <div className="d-flex justify-content-end gap-3 mb-3">
+        <Button
+          type="primary"
+          onClick={() => {
+            setOpenModal(true);
+            setModalType("kms");
+          }}
+        >
+          Update Base KMs
+        </Button>
+        <Button
+          type="primary"
+          onClick={() => {
+            setOpenModal(true);
+            setModalType("price");
+          }}
+        >
+          Update Price
+        </Button>
+      </div>
+
+      <Table
+        loading={isLoading}
+        columns={columns}
+        dataSource={allVehicleList}
+      />
+
+      <Modal
+        centered
+        open={openModal}
+        confirmLoading={saveLoading}
+        onOk={() => (modalType === "kms" ? saveDistance() : savePrice())}
+        onCancel={() => setOpenModal(false)}
+        title={
+          modalType === "kms"
+            ? "Update Base Mile"
+            : "Update Price after Base Mile"
+        }
+      >
+        {modalType === "kms" ? (
+          <Input
+            placeholder="Enter base Miles eg: 10"
+            onChange={(e) => setMiles(e.target.value)}
+          />
+        ) : (
+          <Input
+            placeholder="Enter price after base Miles eg 10"
+            onChange={(e) => setPrice(e.target.value)}
+          />
+        )}
+      </Modal>
+    </div>
+  );
+}
+
+export default SettingsPage;
